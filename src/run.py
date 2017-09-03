@@ -11,6 +11,8 @@ theoTimer = time.time()-7
 chrisPTimer = time.time()-7
 chrisATimer = time.time()-7
 nasiaTimer = time.time()-7
+nikosTimer = time.time()-7
+primeMinisterTimer = time.time()-7
 cdname = None
 listings = []
 
@@ -81,6 +83,28 @@ def shoutNasia(label):
         cdname = label
         nasiaTimer = time.time()
 
+def shoutNikos(label):
+    global cdname, nikosTimer
+    if cdname == label and time.time()-nikosTimer > 10:
+        os.system('rosrun sound_play play.py /home/quelotic/catkin_ws/src/face_to_speech/sounds/nikos.wav')
+        cdname = label
+        nikosTimer = time.time()
+    elif cdname != label:
+        os.system('rosrun sound_play play.py /home/quelotic/catkin_ws/src/face_to_speech/sounds/nikos.wav')
+        cdname = label
+        nikosTimer = time.time()
+
+def shoutPrimeMinister(label):
+    global cdname, primeMinisterTimer
+    if cdname == label and time.time()-primeMinisterTimer > 10:
+        os.system('rosrun sound_play play.py /home/quelotic/catkin_ws/src/face_to_speech/sounds/primeMinister.wav')
+        cdname = label
+        primeMinisterTimer = time.time()
+    elif cdname != label:
+        os.system('rosrun sound_play play.py /home/quelotic/catkin_ws/src/face_to_speech/sounds/primeMinister.wav')
+        cdname = label
+        primeMinisterTimer = time.time()
+
 def appendToList(label):
     global listings
     listings.append(label)
@@ -123,8 +147,14 @@ def callback(msg):
                 elif label == 'Nasia':
                     shoutNasia(label)
                     del listings[:]
-            #elif len(listings) == 6:
-            #    del listings[:]
+                elif label == 'Nikos':
+                    shoutNikos(label)
+                    del listings[:]
+                elif label == 'TsiprasA':
+                    shoutPrimeMinister()
+                    del listings[:]
+            elif len(listings) == 6:
+                del listings[:]
     except:
         pass
 
