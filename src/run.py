@@ -120,7 +120,7 @@ def checkEqual(iterator):
 def callback(msg):
     global timer, list
     try:
-        if time.time()-timer > 0.5:
+        if time.time()-timer > 0.3:
             label = msg.detections[0].label
             appendToList(label)
             print (listings)
