@@ -20,88 +20,88 @@ listings = []
 def shoutAlexander(label):
     global cdname, alexTimer
     if cdname == label and time.time()-alexTimer > 10:
-        os.system('rosrun sound_play play.py /home/quelotic/catkin_ws/src/face_to_speech/sounds/alexander.wav')
+        os.system('rosrun sound_play play.py ~/catkin_ws/src/face_to_speech/sounds/alexander.wav')
         cdname = label
         alexTimer = time.time()
     elif cdname != label:
-        os.system('rosrun sound_play play.py /home/quelotic/catkin_ws/src/face_to_speech/sounds/alexander.wav')
+        os.system('rosrun sound_play play.py ~/catkin_ws/src/face_to_speech/sounds/alexander.wav')
         cdname = label
         alexTimer = time.time()
 
 def shoutThomas(label):
     global cdname, thomasTimer
     if cdname == label and time.time()-thomasTimer > 10:
-        os.system('rosrun sound_play play.py /home/quelotic/catkin_ws/src/face_to_speech/sounds/thomas.wav')
+        os.system('rosrun sound_play play.py ~/catkin_ws/src/face_to_speech/sounds/thomas.wav')
         cdname = label
         thomasTimer = time.time()
     elif cdname != label:
-        os.system('rosrun sound_play play.py /home/quelotic/catkin_ws/src/face_to_speech/sounds/thomas.wav')
+        os.system('rosrun sound_play play.py ~/catkin_ws/src/face_to_speech/sounds/thomas.wav')
         cdname = label
         thomasTimer = time.time()
 
 def shoutTheodore(label):
     global cdname, thomasTimer
     if cdname == label and time.time()-theoTimer > 10:
-        os.system('rosrun sound_play play.py /home/quelotic/catkin_ws/src/face_to_speech/sounds/theodore.wav')
+        os.system('rosrun sound_play play.py ~/catkin_ws/src/face_to_speech/sounds/theodore.wav')
         cdname = label
         theoTimer = time.time()
     elif cdname != label:
-        os.system('rosrun sound_play play.py /home/quelotic/catkin_ws/src/face_to_speech/sounds/theodore.wav')
+        os.system('rosrun sound_play play.py ~/catkin_ws/src/face_to_speech/sounds/theodore.wav')
         cdname = label
         theoTimer = time.time()
 
 def shoutChrisA(label):
     global cdname, chrisATimer
     if cdname == label and time.time()-chrisATimer > 10:
-        os.system('rosrun sound_play play.py /home/quelotic/catkin_ws/src/face_to_speech/sounds/chris.wav')
+        os.system('rosrun sound_play play.py ~/catkin_ws/src/face_to_speech/sounds/chris.wav')
         cdname = label
         chrisATimer = time.time()
     elif cdname != label:
-        os.system('rosrun sound_play play.py /home/quelotic/catkin_ws/src/face_to_speech/sounds/chris.wav')
+        os.system('rosrun sound_play play.py ~/catkin_ws/src/face_to_speech/sounds/chris.wav')
         cdname = label
         chrisATimer = time.time()
 
 def shoutChrisP(label):
     global cdname, chrisPTimer
     if cdname == label and time.time()-chrisPTimer > 10:
-        os.system('rosrun sound_play play.py /home/quelotic/catkin_ws/src/face_to_speech/sounds/chris.wav')
+        os.system('rosrun sound_play play.py ~/catkin_ws/src/face_to_speech/sounds/chris.wav')
         cdname = label
         chrisPTimer = time.time()
     elif cdname != label:
-        os.system('rosrun sound_play play.py /home/quelotic/catkin_ws/src/face_to_speech/sounds/chris.wav')
+        os.system('rosrun sound_play play.py ~/catkin_ws/src/face_to_speech/sounds/chris.wav')
         cdname = label
         chrisPTimer = time.time()
 
 def shoutNasia(label):
     global cdname, nasiaTimer
     if cdname == label and time.time()-nasiaTimer > 10:
-        os.system('rosrun sound_play play.py /home/quelotic/catkin_ws/src/face_to_speech/sounds/nasia.wav')
+        os.system('rosrun sound_play play.py ~/catkin_ws/src/face_to_speech/sounds/nasia.wav')
         cdname = label
         nasiaTimer = time.time()
     elif cdname != label:
-        os.system('rosrun sound_play play.py /home/quelotic/catkin_ws/src/face_to_speech/sounds/nasia.wav')
+        os.system('rosrun sound_play play.py ~/catkin_ws/src/face_to_speech/sounds/nasia.wav')
         cdname = label
         nasiaTimer = time.time()
 
 def shoutNikos(label):
     global cdname, nikosTimer
     if cdname == label and time.time()-nikosTimer > 10:
-        os.system('rosrun sound_play play.py /home/quelotic/catkin_ws/src/face_to_speech/sounds/nikos.wav')
+        os.system('rosrun sound_play play.py ~/catkin_ws/src/face_to_speech/sounds/nikos.wav')
         cdname = label
         nikosTimer = time.time()
     elif cdname != label:
-        os.system('rosrun sound_play play.py /home/quelotic/catkin_ws/src/face_to_speech/sounds/nikos.wav')
+        os.system('rosrun sound_play play.py ~/catkin_ws/src/face_to_speech/sounds/nikos.wav')
         cdname = label
         nikosTimer = time.time()
 
 def shoutPrimeMinister(label):
     global cdname, primeMinisterTimer
     if cdname == label and time.time()-primeMinisterTimer > 10:
-        os.system('rosrun sound_play play.py /home/quelotic/catkin_ws/src/face_to_speech/sounds/primeMinister.wav')
+        os.system('rosrun sound_play play.py ~/catkin_ws/src/face_to_speech/sounds/primeMinister.wav')
         cdname = label
         primeMinisterTimer = time.time()
     elif cdname != label:
-        os.system('rosrun sound_play play.py /home/quelotic/catkin_ws/src/face_to_speech/sounds/primeMinister.wav')
+        os.system('rosrun sound_play play.py ~/catkin_ws/src/face_to_speech/sounds/primeMinister.wav')
         cdname = label
         primeMinisterTimer = time.time()
 
